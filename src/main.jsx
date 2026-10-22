@@ -8,6 +8,7 @@ import {
   Layers, Award, Check, Flame, Zap
 } from "lucide-react";
 import "./styles.css";
+import scpLogo from "./scp-traders-logo.png";
 
 const WHATSAPP_NUMBER = "919840000000";
 
@@ -327,7 +328,7 @@ function App() {
       <header className="main-header">
         <div className="container header-main">
           <a className="brand" href="#home" aria-label="SCP TRADERS home">
-            <img className="brand-logo" src="/src/scp-traders-logo.png" alt="SCP TRADERS Logo" />
+         <img className="brand-logo" src={scpLogo} alt="SCP TRADERS Logo" />
           </a>
           
           <form className="search-box" onSubmit={e => { e.preventDefault(); document.getElementById("products")?.scrollIntoView({ behavior: "smooth" }); }}>
@@ -874,7 +875,7 @@ function App() {
         <div className="container footer-grid">
           <div className="footer-brand">
             <a className="brand footer-logo" href="#home">
-              <img className="brand-logo" src="/src/scp-traders-logo.png" alt="SCP TRADERS" />
+              <img className="brand-logo" src={scpLogo} alt="SCP TRADERS Logo" />
             </a>
             <p>
               Your trusted partner for high-grade PET jars, bottles, and wholesale packaging materials in Tamil Nadu & Pan-India.
